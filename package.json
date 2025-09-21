@@ -1,17 +1,45 @@
 {
-  "name": "ration-depot-manager",
-  "version": "1.0.0",
+  "name": "depot-management",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A management application for a ration depot.",
+  "homepage": "https://github.com/ashnevoss/rationdepotmanager#readme",
+  "bugs": {
+    "url": "https://github.com/ashnevoss/rationdepotmanager/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashnevoss/rationdepotmanager.git"
+  },
+  "license": "ISC",
+  "author": "ashnevoss",
+  "type": "module",
   "scripts": {
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "dev": "next dev"
+    "lint": "next lint"
   },
   "dependencies": {
-    "geist": "^1.5.1",
-    "googleapis": "^128.0.0",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/postcss": "^4.1.13",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "google-spreadsheet": "^5.0.2",
+    "googleapis": "^160.0.0",
     "lucide-react": "^0.544.0",
-    "next": "^14.0.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "next": "^15.5.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8",
+    "eslint-config-next": "15.5.3",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.3.8"
   }
 }

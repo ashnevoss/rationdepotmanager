@@ -1,4 +1,4 @@
-import GoogleSheetsService from './lib/googleSheets.js';
+import GoogleSheetsService from '@/lib/googleSheets.js';
 
 export default async function handler(req, res) {
   try {

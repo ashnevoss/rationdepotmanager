@@ -54,7 +54,7 @@ const GoogleSheetsService = {
       return { success: true };
     } catch (error) {
       console.error(`Error writing to ${sheetName}:`, error);
-      return { success: false, error: error.message };
+      return { success: false, error };
     }
   },
 
@@ -83,7 +83,7 @@ const GoogleSheetsService = {
       return { success: true };
     } catch (error) {
       console.error(`Error updating ${sheetName}:`, error);
-      return { success: false, error: error.message };
+      return { success: false, error };
     }
   },
 
@@ -115,7 +115,7 @@ const GoogleSheetsService = {
       return { success: true };
     } catch (error) {
       console.error(`Error deleting from ${sheetName}:`, error);
-      return { success: false, error: error.message };
+      return { success: false, error };
     }
   },
 };
