@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    devIndicators:false
-};
+  devIndicators: {
+    buildActivity: true,
 
-export default nextConfig;
+  }
+  // or simply remove the devIndicators line if you don't need it
+}
+
+export default nextConfig

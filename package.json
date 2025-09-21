@@ -7,9 +7,11 @@
     "dev": "next dev"
   },
   "dependencies": {
+    "geist": "^1.5.1",
+    "googleapis": "^128.0.0",
+    "lucide-react": "^0.544.0",
     "next": "^14.0.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "googleapis": "^128.0.0"
+    "react-dom": "^18.0.0"
   }
 }
