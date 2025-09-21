@@ -1,5 +1,4 @@
-import GoogleSheetsService from '../../lib/googleSheets';
-
+import GoogleSheetsService from './lib/googleSheets.js';
 
 export default async function handler(req, res) {
   try {
@@ -8,7 +7,6 @@ export default async function handler(req, res) {
       res.status(200).json(data);
     } 
     else if (req.method === 'POST') {
-      // ✅ FIX: Use the ID from the request body.
       const { 
         ID,
         CardID, 
@@ -24,7 +22,7 @@ export default async function handler(req, res) {
       } = req.body;
       
       const newMember = {
-        ID, // Use the ID sent from the frontend
+        ID,
         CardID,
         Name,
         DOB,

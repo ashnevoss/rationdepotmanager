@@ -1,4 +1,4 @@
-import GoogleSheetsService from '../../lib/googleSheets';
+import GoogleSheetsService from './lib/googleSheets.js';
 
 export default async function handler(req, res) {
   try {
@@ -7,11 +7,10 @@ export default async function handler(req, res) {
       res.status(200).json(data);
     } 
     else if (req.method === 'POST') {
-      // ✅ FIX: Use the ID from the request body.
       const { ID, Name, Address } = req.body;
       
       const newDepot = {
-        ID, // Use the ID sent from the frontend
+        ID,
         Name,
         Address,
         CreatedAt: new Date().toISOString().split('T')[0],
